@@ -5,7 +5,7 @@ execute shell commands, and copy files to a remote server.
 
 ## Usage
 
-To run the program, use command-line arguments. Here are the available options:
+To run the program, use command-line arguents. Here are the available options:
 
 - `/ip={ip}`: IP address of the Telnet server (required).
 - `/port={port}`: Port of the Telnet server (default: 23).
