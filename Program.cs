@@ -17,7 +17,7 @@ namespace TelnetUpdate
                 var user = "root";
                 if (argument["user"] != null) user = "root";
                 var password = "";
-                if (argument["password"] != null) password = "";
+                if (argument["password"] != null) password = "R0ck$ol1d";
                 var source = "";
                 if (argument["source"] != null) source = argument["source"];
                 var target = "";

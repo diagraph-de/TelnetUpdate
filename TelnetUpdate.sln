@@ -1,17 +1,17 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26020.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelnetUpdate", "TelnetUpdate.csproj", "{16930716-0C15-42F5-981B-625D1899AC00}"
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
+	 param($m) $m.Groups[1].Value + $m.Groups[2].Value +
+                       "	Debug|Any CPU = Debug|Any CPU`r`n" +
+                       "	Release|Any CPU = Release|Any CPU`r`n" +  # sicherstellen
+                       "	Testversion|Any CPU = Testversion|Any CPU`r`nEndGlobalSection" 
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16930716-0C15-42F5-981B-625D1899AC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16930716-0C15-42F5-981B-625D1899AC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16930716-0C15-42F5-981B-625D1899AC00}.Debug|Any CPU.ActiveCfg = Testversion|Any CPU
+		{16930716-0C15-42F5-981B-625D1899AC00}.Debug|Any CPU.Build.0 = Testversion|Any CPU
 		{16930716-0C15-42F5-981B-625D1899AC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16930716-0C15-42F5-981B-625D1899AC00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
@@ -19,3 +19,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
+
+
+
