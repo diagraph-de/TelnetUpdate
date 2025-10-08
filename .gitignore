@@ -1,0 +1,11 @@
+﻿# Ignore Visual Studio build artifacts
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.db
+*.bak
+*.log
+*.tmp
